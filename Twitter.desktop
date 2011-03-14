@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Twitter
+Type=Application
+Comment=Web Application
+Exec="prism" -override "/home/tim/.webapps/twitter@prism.app/override.ini" -webapp twitter@prism.app
+Categories=GTK;Network;
+StartupWMClass=Prism
+StartupNotify=true
+Icon=/home/tim/.webapps/twitter@prism.app/icons/default/webapp.png
