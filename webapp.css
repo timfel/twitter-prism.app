@@ -39,10 +39,8 @@
     }
     .tweet-box { padding: 0px !important; }
     .tweet-box-title { display: none; }
-    .tweet-button-container {
-        margin-top: -40px !important;
-    }
-    .text-area-editor twttr-editor{max-width: 250px !important;}
+    .tweet-button-container { margin-top: -40px !important; }
+    .text-area-editor.twttr-editor { max-width: 250px !important;}
     .twitter-anywhere-tweet-box-editor{width: 250px !important;}
     .autocomplete-container{width: 250px !important;}
     /* Tabs */
@@ -53,6 +51,13 @@
     .tweet-text { font-size: 12px !important; line-height: 14px !important; }
     .tweet-text-large { font-size: 12px !important; }
     .stream-item-content.tweet { padding: 0px !important }
+
+    /* Dialog */
+    .twttr-dialog { width: 345px !important; }
+    .twttr-dialog-footer { width: 320px !important; }
+    .twttr-dialog .text-area-editor.twttr-editor { max-width: 300px !important; }
+    .twttr-dialog .text-area .twitter-anywhere-tweet-box-editor { width: 300px !important; }
+    .twttr-dialog .tweet-button-container { margin-top: 15px !important; }
 
     /* Details slider */
     #details-pane-outer { z-index: 1000 !important; }
