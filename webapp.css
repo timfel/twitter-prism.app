@@ -8,7 +8,7 @@
   top: 0px !important;
   left: 0px !important;
   position: absolute !important;
-  min-width: 650px !important;
+  min-width: 350px !important;
 }
 .main-content{width: 350px !important;}
 .main-tweet-box {
@@ -16,7 +16,7 @@
   max-height: 100px !important;
 }
 .tweet-box { padding: 0px !important; }
-.tweet-box-title { display: none; }
+/* .tweet-box-title { display: none; } */
 .tweet-button-container {
   margin-top: -40px !important;
 }
@@ -26,19 +26,30 @@
 .tweet { font-size: 12px !important; line-height: 14px !important; }
 .tweet-text { font-size: 12px !important; line-height: 14px !important; }
 .tweet-text-large { font-size: 12px !important; }
+#details-pane-outer { z-index: 1000 !important; }
 .details-pane.opened {
-  ; position: absolute;
-  ; z-index: 100000;
+  left: 0px !important;
   font-size: 10px !important;
-  max-width: 300px !important;
-  min-width: 300px !important;
+  max-width: 350px !important;
+  min-width: 350px !important;
 }
 .stream-item-content.tweet { padding: 0px !important }
 .dashboard{
   font-size: 10px;
   line-height: 18px;
-  min-width: 280px !important;
-  max-width: 280px !important;
+  z-index: 1000 !important;
+  position: absolute !important;
+  height: 1em !important;
+  min-width: 120px !important;
+  max-width: 120px !important;
+  background-color: #333;
+  left: 220px !important;
+}
+.dashboard:hover {
+  min-width: 300px !important;
+  max-width: 300px !important;
+  height: 520px !important;
+  left: 50px !important;
 }
 .dashboard>.component>.your-activity { display:none; }
 .dashboard>.component>.user-rec-inner { display:none !important; }
