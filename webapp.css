@@ -1,61 +1,107 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 
 @-moz-document domain("twitter.com") {
-#top-stuff{display: none !important;}
-#page-outer { min-width: 0px !important }
-#page-container {
-  margin: 0px 0px !important;
-  top: 0px !important;
-  left: 0px !important;
-  position: absolute !important;
-  min-width: 350px !important;
-}
-.main-content{width: 350px !important;}
-.main-tweet-box {
-  padding: 8px 8px !important;
-  max-height: 100px !important;
-}
-.tweet-box { padding: 0px !important; }
-/* .tweet-box-title { display: none; } */
-.tweet-button-container {
-  margin-top: -40px !important;
-}
-.text-area-editor twttr-editor{max-width: 250px !important;}
-.twitter-anywhere-tweet-box-editor{width: 250px !important;}
-.autocomplete-container{width: 250px !important;}
-.tweet { font-size: 12px !important; line-height: 14px !important; }
-.tweet-text { font-size: 12px !important; line-height: 14px !important; }
-.tweet-text-large { font-size: 12px !important; }
-#details-pane-outer { z-index: 1000 !important; }
-.details-pane.opened {
-  left: 0px !important;
-  font-size: 10px !important;
-  max-width: 350px !important;
-  min-width: 350px !important;
-}
-.stream-item-content.tweet { padding: 0px !important }
-.dashboard{
-  font-size: 10px;
-  line-height: 18px;
-  z-index: 1000 !important;
-  position: absolute !important;
-  height: 1em !important;
-  min-width: 120px !important;
-  max-width: 120px !important;
-  background-color: #333;
-  left: 220px !important;
-}
-.dashboard:hover {
-  min-width: 300px !important;
-  max-width: 300px !important;
-  height: 520px !important;
-  left: 50px !important;
-}
-.dashboard>.component>.your-activity { display:none; }
-.dashboard>.component>.user-rec-inner { display:none !important; }
-.dashboard>.component>.definition { display:none; }
-.dashboard .component-spacer { display: none !important; }
-.stream-tab-retweets{ display: none !important; }
-.stream-tabs { padding: 0px !important; }
+    /* Navigation Top Bar */
+    #top-stuff {
+        font-size: 10px !important;
+        line-height: 12px !important;
+        min-width: 0px !important;
+        max-width: 240px !important;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    #top-bar { min-width: 0px !important; }
+    .top-bar-inside { margin: 0px !important; min-width: 0px !important; }
+    #logo { display: none; }
+    #search-query { width: 75px !important; }
+    #global-nav-whotofollow { display: none; }
+    #global-nav-profile { display: none; }
+    #top-bar .active-links { display: none; }
+
+    /* Content */
+    #page-outer { min-width: 0px !important }
+    #page-container {
+        margin: 0px 0px !important;
+        top: 40px !important;
+        left: 0px !important;
+        position: absolute !important;
+        min-width: 350px !important;
+    }
+
+    /* Timeline */
+    .main-content{
+        width: 350px !important;
+    }
+    /* Tweet box */
+    .main-tweet-box {
+        padding: 8px 8px !important;
+        max-height: 100px !important;
+    }
+    .tweet-box { padding: 0px !important; }
+    .tweet-box-title { display: none; }
+    .tweet-button-container {
+        margin-top: -40px !important;
+    }
+    .text-area-editor twttr-editor{max-width: 250px !important;}
+    .twitter-anywhere-tweet-box-editor{width: 250px !important;}
+    .autocomplete-container{width: 250px !important;}
+    /* Tabs */
+    .stream-tab-retweets{ display: none !important; }
+    .stream-tabs { padding: 0px !important; }
+    /* Tweets */
+    .tweet { font-size: 12px !important; line-height: 14px !important; }
+    .tweet-text { font-size: 12px !important; line-height: 14px !important; }
+    .tweet-text-large { font-size: 12px !important; }
+    .stream-item-content.tweet { padding: 0px !important }
+
+    /* Details slider */
+    #details-pane-outer { z-index: 1000 !important; }
+    .details-pane.opened {
+        top: 15px !important;
+        left: 15px !important;
+        font-size: 10px !important;
+        max-width: 320px !important;
+        min-width: 320px !important;
+        -moz-box-shadow: 0px 0px 25px 5px black !important;
+        -moz-border-radius: 1em;
+        box-shadow: 0px 0px 25px 5px black !important;
+        border-radius: 1em;
+    }
+
+    /* Dashboard */
+    .dashboard {
+        font-size: 10px;
+        line-height: 18px;
+        z-index: 9999 !important;
+        position: fixed !important;
+        height: 30px !important;
+        min-width: 115px !important;
+        max-width: 115px !important;
+        left: 235px !important;
+        top: 0px !important;
+        padding-left: 6px !important;
+        padding-top: 0px !important;
+        padding-bottom: 10px !important;
+        background: #333;
+        -moz-box-shadow: 4px 1px 2px rgba(0,0,0,0.5) !important;
+        box-shadow: 4px 1px 2px rgba(0,0,0,0.5) !important;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+    }
+    .dashboard:hover {
+        min-width: 300px !important;
+        max-width: 300px !important;
+        height: 520px !important;
+        left: 35px !important;
+        -moz-box-shadow: -3px 3px 25px rgba(0,0,0,0.8) !important;
+        box-shadow: -3px 3px 25px rgba(0,0,0,0.8) !important;
+        -moz-border-radius: 1em;
+        border-radius: 1em;
+    }
+    .dashboard>.component>.your-activity { display:none; }
+    .dashboard>.component>.user-rec-inner { display:none !important; }
+    .dashboard>.component>.definition { display:none; }
+    .dashboard .component-spacer { display: none !important; }
+    .dashboard .title-link { display: none !important; }
 }
 
